@@ -1,5 +1,8 @@
 # Database Systems
 
+[![CI](https://github.com/KumailAbbas05/Database-Systems/actions/workflows/ci.yml/badge.svg)](https://github.com/KumailAbbas05/Database-Systems/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 ![SQL](https://img.shields.io/badge/SQL-MySQL--style-blue)
 ![Database](https://img.shields.io/badge/Focus-Relational%20Databases-green)
 
