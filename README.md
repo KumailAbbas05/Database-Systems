@@ -1,19 +1,44 @@
 # Database Systems
 
-A beginner-friendly collection of Database Systems practice work using SQL.
+![SQL](https://img.shields.io/badge/SQL-MySQL--style-blue)
+![Database](https://img.shields.io/badge/Focus-Relational%20Databases-green)
 
-## Topics Covered
+A beginner-friendly SQL project demonstrating relational database design and common database operations.
 
-- Creating databases and tables
+## Practice Database
+
+The project models a small university system with four related tables:
+
+```text
+Departments
+   ↑
+Students      Courses
+   \          /
+    Enrollments
+```
+
+Main entities:
+
+- Students
+- Departments
+- Courses
+- Enrollments
+
+## Concepts Covered
+
+- `CREATE DATABASE`
+- `CREATE TABLE`
 - Primary keys
 - Foreign keys
-- INSERT statements
-- SELECT queries
-- WHERE conditions
-- ORDER BY
-- Aggregate functions
-- JOIN operations
-- Basic normalization concepts
+- `INSERT`
+- `SELECT`
+- `WHERE`
+- `ORDER BY`
+- `UPDATE`
+- `JOIN`
+- `COUNT`
+- `GROUP BY`
+- 1NF, 2NF and 3NF
 
 ## Repository Structure
 
@@ -30,20 +55,23 @@ Database-Systems/
 └── README.md
 ```
 
-## Practice Database
+## What I Practiced
 
-The SQL examples use a small university database containing:
+- Designing relational tables
+- Connecting tables using foreign keys
+- Querying data
+- Joining multiple tables
+- Aggregating records
+- Reducing duplication through normalization
 
-- Students
-- Departments
-- Courses
-- Enrollments
+## Planned Additions
 
-## Technologies
-
-- SQL
-- MySQL-style syntax
-- Relational Database Concepts
+- Subqueries
+- Views
+- Stored procedures
+- Indexes
+- More complex joins
+- A larger database project
 
 ## Author
 
