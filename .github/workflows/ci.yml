@@ -1,0 +1,30 @@
+name: Database Project Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  structure-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required SQL files
+        run: |
+          test -s sql/university_database.sql
+          test -s sql/basic_queries.sql
+          test -s sql/joins.sql
+          test -s sql/aggregate_queries.sql
+          test -s notes/normalization.md
+
+      - name: Check core SQL statements exist
+        run: |
+          grep -qi "CREATE TABLE" sql/university_database.sql
+          grep -qi "SELECT" sql/basic_queries.sql
+          grep -qi "JOIN" sql/joins.sql
+          grep -qi "GROUP BY" sql/aggregate_queries.sql
